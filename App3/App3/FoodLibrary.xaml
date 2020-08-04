@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" BackgroundColor="DimGray"
+             x:Class="App3.FoodLibrary">
+    <StackLayout >
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+            
+            <Button Grid.Column="0" Text="GO BACK" x:Name="gobackpagebutton"></Button>
+        </Grid>
+        <StackLayout>
+            <ListView x:Name="_listview" ItemSelected="_listview_ItemSelected" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell   >
+                            <Label FontSize="22" Text="{Binding Name}" TextColor="WhiteSmoke" HorizontalOptions="Center" VerticalOptions="Center" >
+                                
+                            </Label>
+                            
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        <Entry x:Name="foodentry" Placeholder="new item">
+            
+            
+        </Entry>
+        <Entry x:Name="tagentry" Placeholder="tags">
+
+
+        </Entry>
+        <Button x:Name="addbutton" Text="CONFIRM ADDING" Margin="15,0,15,0" >
+            
+        </Button>
+        <Button  x:Name="deletebutton" Text="Delete existing item" Margin="15,0,15,0" >
+
+        </Button>
+        <Button IsVisible="false"  x:Name="expand" Text="GO TO CHECKLIST" Margin="15,0,15,0"  >
+            
+        </Button>
+
+
+
+
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" BackgroundColor="SlateGray"
+             x:Class="App3.ShoppingcartPage">
+    <ContentPage.Content>
+        <StackLayout >
+            <ListView x:Name="_listview">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label Text="{Binding Name}" TextColor="White" FontSize="22" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                
+            </ListView>
+
+           
+           
+            
+            <Button CornerRadius="20" x:Name="removeallbutton" Text="Remove everything!" Margin="55"></Button>
+
+
+
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

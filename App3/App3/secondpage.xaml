@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" BackgroundColor="DimGray"
+             x:Class="App3.secondpage">
+    <StackLayout VerticalOptions="Center" Margin="5">
+
+
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto">
+                    
+                </RowDefinition>
+                <RowDefinition Height="*">
+
+                </RowDefinition>
+                <RowDefinition Height="auto">
+
+                </RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Button CornerRadius="20"  Grid.Row="0" x:Name="nextpagebutton"   Text="Library" Margin="25,5,25,5">
+
+            </Button>
+
+
+            <Button CornerRadius="20" Grid.Row="1"  x:Name="searchbut" Text="search" Margin="25,5,25,5" >
+
+
+            </Button>
+
+
+
+
+
+            <Button CornerRadius="20"  Grid.Row="2"   x:Name="ShoppingCart" Text="Shoppingcart" Margin="25,5,25,5" >
+
+
+            </Button>
+
+
+
+
+        </Grid>
+
+
+
+
+
+
+
+
+
+
+
+        <StackLayout HorizontalOptions="Center">
+            <Label Text="HUngry" FontSize="80"   FontAttributes="Bold" FontFamily=""></Label>
+            <Label Text="No idea" FontSize="50"   FontAttributes="Bold" FontFamily=""></Label>
+            <Label Text="BuT WannA Eat" FontSize="30"   FontAttributes="Bold" FontFamily=""></Label>
+        </StackLayout>
+
+
+
+        
+
+    </StackLayout>
+
+</ContentPage>

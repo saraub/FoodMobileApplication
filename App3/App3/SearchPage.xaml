@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" BackgroundColor="SlateGray"
+             x:Class="App3.SearchPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*">
+
+                </RowDefinition>
+                <RowDefinition Height="*">
+
+                </RowDefinition>
+                <RowDefinition Height="*">
+
+                </RowDefinition>
+
+            </Grid.RowDefinitions>
+            <StackLayout>
+
+            </StackLayout>
+            <StackLayout Grid.Row="1" >
+                <Label Text="Seach your item" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <SearchBar  x:Name="_searchbar" HorizontalOptions="Center" SearchButtonPressed="_searchbar_SearchButtonPressed_1">
+
+                </SearchBar>
+            </StackLayout>
+
+
+            <StackLayout>
+
+
+                <ListView x:Name="_listview" ItemTapped="_listview_ItemTapped" ItemSelected="_listview_ItemSelected_1">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout>
+                                    <Label FontSize="22" Text="{Binding Name}" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center">
+
+                                    </Label>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+
+                </ListView>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
